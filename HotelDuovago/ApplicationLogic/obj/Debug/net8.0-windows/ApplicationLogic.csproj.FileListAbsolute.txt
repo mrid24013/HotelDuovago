@@ -1,0 +1,48 @@
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.csproj.AssemblyReference.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.AssemblyInfo.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.sourcelink.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.deps.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\Applicat.EC504AD8.Up2Date
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\refint\ApplicationLogic.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ref\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.deps.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.csproj.AssemblyReference.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.AssemblyInfo.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.sourcelink.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\Applicat.EC504AD8.Up2Date
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\refint\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\ApplicationLogic\obj\Debug\net8.0-windows\ref\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.deps.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\bin\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.csproj.AssemblyReference.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.AssemblyInfo.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.sourcelink.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\Applicat.EC504AD8.Up2Date
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\refint\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\ApplicationLogic\obj\Debug\net8.0-windows\ref\ApplicationLogic.dll

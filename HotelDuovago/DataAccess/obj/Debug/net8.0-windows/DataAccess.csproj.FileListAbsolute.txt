@@ -1,0 +1,39 @@
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\bin\Debug\net8.0-windows\DataAccess.deps.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.csproj.AssemblyReference.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.AssemblyInfoInputs.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.AssemblyInfo.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.sourcelink.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\refint\DataAccess.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\ref\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\bin\Debug\net8.0-windows\DataAccess.deps.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.csproj.AssemblyReference.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.AssemblyInfoInputs.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.AssemblyInfo.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.sourcelink.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\refint\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\DataAccess\obj\Debug\net8.0-windows\ref\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\bin\Debug\net8.0-windows\DataAccess.deps.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.csproj.AssemblyReference.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.AssemblyInfoInputs.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.AssemblyInfo.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.sourcelink.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\refint\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\DataAccess\obj\Debug\net8.0-windows\ref\DataAccess.dll

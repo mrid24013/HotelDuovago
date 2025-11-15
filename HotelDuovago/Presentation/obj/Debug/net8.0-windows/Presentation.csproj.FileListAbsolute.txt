@@ -1,0 +1,243 @@
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.exe
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.dll.config
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.deps.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.runtimeconfig.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.AssemblyReference.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation_MarkupCompile.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation_MarkupCompile.lref
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.g.resources
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.AssemblyInfoInputs.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.AssemblyInfo.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.sourcelink.json
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presenta.BC777DBE.Up2Date
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\refint\Presentation.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.pdb
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.genruntimeconfig.cache
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\ref\Presentation.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Views\ProductView.g.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\App.baml
+C:\Users\arxie\Documents\Cesun\Desarrollo de Software Empresarial 2\Repositories\Nueva carpeta\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Views\ProductView.baml
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.exe
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.dll.config
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.deps.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.runtimeconfig.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Presentation.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation_MarkupCompile.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation_MarkupCompile.lref
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.g.resources
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.AssemblyInfoInputs.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.AssemblyInfo.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.sourcelink.json
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\refint\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.genruntimeconfig.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\ref\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.AssemblyReference.cache
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Views\ProductView.g.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\App.baml
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Views\ProductView.baml
+C:\Users\IBryc\Documents\GitHub\wpf-inventory-2025-3\WpfInventory\Presentation\obj\Debug\net8.0-windows\Presenta.BC777DBE.Up2Date
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Presentation.exe
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Presentation.dll.config
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Presentation.deps.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Presentation.runtimeconfig.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Presentation.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\ApplicationLogic.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\ApplicationLogic.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.AssemblyReference.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\ProductView.g.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation_MarkupCompile.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation_MarkupCompile.lref
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\App.baml
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\ProductView.baml
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.g.resources
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.AssemblyInfoInputs.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.AssemblyInfo.cs
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.sourcelink.json
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presenta.BC777DBE.Up2Date
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\refint\Presentation.dll
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.pdb
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Presentation.genruntimeconfig.cache
+C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\ref\Presentation.dll
