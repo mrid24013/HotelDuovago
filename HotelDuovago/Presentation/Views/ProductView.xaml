@@ -24,6 +24,8 @@
                     <ColumnDefinition />
                     <ColumnDefinition Width="10px" />
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10px" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
                 <TextBox Grid.Column="0" x:Name="txtSearch" />
@@ -32,6 +34,13 @@
                         x:Name="btnSearch" 
                         Content="Search"
                         Click="OnClickBtnSearch">
+                </Button>
+
+                <Button Grid.Column="4" 
+                        x:Name="btnExport" 
+                        Content="Export"
+                        Background="ForestGreen"
+                        Click="ExportToExcel">
                 </Button>
             </Grid>
 

@@ -1,7 +1,12 @@
 ﻿using ApplicationLogic.Managers;
-using Presentation.Models;
 using System.Windows;
 using System.Windows.Controls;
+
+using DataAccess.Repositories;
+
+using Presentation.Enums;
+using Presentation.Models;
+using Presentation.Services;
 
 namespace Presentation.Views
 {
@@ -108,6 +113,37 @@ namespace Presentation.Views
         {
             decimal totalPrices = Products.Sum(p => p.Price);
             txbTotalPrices.Text = $"{totalPrices.ToString(format: "C")} Acumulated";
+        }
+
+        private void ExportToExcel(object sender, RoutedEventArgs e)
+        {
+            // Generar las columnas
+            List<ExcelColumn> columns = new List<ExcelColumn>()
+            {
+                new ExcelColumn { Name = "Code", Type = ColumnType.String},
+                new ExcelColumn { Name = "Description", Type = ColumnType.String},
+                new ExcelColumn { Name = "Price", Type = ColumnType.Decimal},
+                new ExcelColumn { Name = "Manufacturer", Type = ColumnType.String}
+            };
+
+            // Obtenemos los datos
+            var productsData = new ProductRepository().GetAll();
+
+            // Convertimos la data acorde al modelo del reporte
+            var data = new List<ProductReport>() { };
+            foreach (var product in productsData)
+            {
+                data.Add(new ProductReport()
+                {
+                    Code = product.ProductCode,
+                    Description = product.ProductDescription,
+                    Price = product.ProductPrice,
+                    Manufacturer = product.ManufacturerName ?? ""
+                });
+            }
+
+            // Mandamos a llamar al servicio
+            ExcelExportService.Handle(columns, data, "ProductReport");
         }
     }
 }
