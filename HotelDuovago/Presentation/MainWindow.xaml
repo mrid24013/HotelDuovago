@@ -7,10 +7,10 @@
         xmlns:views="clr-namespace:Presentation.Views"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Title="MainWindow" Height="600" Width="900">
+        Title="Examen" Height="600" Width="900">
     <Window.Resources>
-        <DataTemplate x:Name="ProductView" DataType="{x:Type views:ProductView}">
-            <views:ProductView DataContext="{Binding}" />
+        <DataTemplate x:Name="ClienteReadView" DataType="{x:Type views:ClienteReadView}">
+            <views:ClienteReadView DataContext="{Binding}" />
         </DataTemplate>
     </Window.Resources>
 
@@ -21,10 +21,10 @@
         </Grid.RowDefinitions>
 
         <Menu Height="48" Width="Auto" Padding="8" >
-            <MenuItem Header="Inventory" Padding="8 0" Margin="4 0" Height="32" Click="HandleInventoryView" />
-            <MenuItem Header="Products" Padding="8 0" Margin="4 0" Height="32" Click="HandleProductsView"/>
-            <MenuItem Header="Manufacturers" Padding="8 0" Margin="4 0" Height="32" Click="HandleManufacturersView" />
-            <MenuItem Header="Inspections" Padding="8 0" Margin="4 0" Height="32" Click="HandleInspectionsView"/>
+            <MenuItem Header="Read" Padding="8 0" Margin="4 0" Height="32" Click="HandleClienteReadView"/>
+            <MenuItem Header="Insert" Padding="8 0" Margin="4 0" Height="32" Click="HandleClienteInsertView"/>
+            <MenuItem Header="Update" Padding="8 0" Margin="4 0" Height="32" Click="HandleClienteUpdateView"/>
+            <MenuItem Header="Delete" Padding="8 0" Margin="4 0" Height="32" Click="HandleClienteDeleteView"/>
         </Menu>
 
         <ScrollViewer Grid.Row="1" Background="White">

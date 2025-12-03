@@ -4,9 +4,6 @@ using Presentation.Views;
 
 namespace Presentation
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -14,24 +11,24 @@ namespace Presentation
             InitializeComponent();
         }
 
-        private void HandleInventoryView(object sender, RoutedEventArgs e)
+        private void HandleClienteReadView(object sender, RoutedEventArgs e)
         {
-            // DataContext = new InventoryView();
+            DataContext = new ClienteReadView();
         }
 
-        private void HandleProductsView(object sender, RoutedEventArgs e)
+        private void HandleClienteUpdateView(object sender, RoutedEventArgs e)
         {
-            DataContext = new ProductView();
+            DataContext = new ClienteUpdateView();
         }
 
-        private void HandleManufacturersView(object sender, RoutedEventArgs e)
+        private void HandleClienteInsertView(object sender, RoutedEventArgs e)
         {
-            // DataContext = new ManufacturerView();
+            DataContext = new ClienteInsertView();
         }
 
-        private void HandleInspectionsView(object sender, RoutedEventArgs e)
+        private void HandleClienteDeleteView(object sender, RoutedEventArgs e)
         {
-            // DataContext = new InspectionsView();
+            DataContext = new ClienteDeleteView();
         }
     }
 }

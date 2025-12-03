@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\App.xaml
-21836757562
+5-1442338992
 
-12301153447
-233-796023546
-MainWindow.xaml;Views\ProductView.xaml;
+14-1365996297
+233670230826
+MainWindow.xaml;Views\ClienteDeleteView.xaml;Views\ClienteInsertView.xaml;Views\ClienteReadView.xaml;Views\ClienteUpdateView.xaml;
 
 False
 
