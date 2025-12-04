@@ -3,7 +3,18 @@ FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\App.xaml
 FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\MainWindow.xaml;;
 FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Clientes\ClienteDeleteView.xaml;;
 FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Clientes\ClienteInsertView.xaml;;
-FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Clientes\ClienteMainWindow.xaml;;
 FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Clientes\ClienteReadView.xaml;;
 FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Clientes\ClienteUpdateView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Habitaciones\HabitacionDeleteView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Habitaciones\HabitacionInsertView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Habitaciones\HabitacionReadView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Habitaciones\HabitacionUpdateView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Reservaciones\ReservacionDeleteView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Reservaciones\ReservacionInsertView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Reservaciones\ReservacionReadView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Reservaciones\ReservacionUpdateView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Usuarios\UsuarioDeleteView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Usuarios\UsuarioInsertView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Usuarios\UsuarioReadView.xaml;;
+FC:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\Views\Usuarios\UsuarioUpdateView.xaml;;
 

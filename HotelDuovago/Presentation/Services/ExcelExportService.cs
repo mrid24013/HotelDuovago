@@ -1,8 +1,6 @@
 ﻿using System.Windows;
-
 using Presentation.Enums;
 using Presentation.Models;
-
 using Microsoft.Win32;
 
 namespace Presentation.Services
