@@ -1,10 +1,8 @@
 ﻿using ApplicationLogic.Managers;
-using DataAccess.Models;
-using Microsoft.IdentityModel.Tokens;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Presentation.Views
+namespace Presentation.Views.Clientes
 {
     public partial class ClienteUpdateView : UserControl
     {
@@ -19,9 +17,12 @@ namespace Presentation.Views
             if (!string.IsNullOrEmpty(txtID.Text.Trim()))
             {
                 int id = Int32.Parse(txtID.Text.Trim());
-                string companyName = txtCompanyName.Text.Trim();
-                string phone = txtPhone.Text.Trim();
-                UpdateShippers(id, companyName, phone);
+                string nombre = txtNombre.Text.Trim();
+                string telefono = txtTelefono.Text.Trim();
+                string email = txtEmail.Text.Trim();
+                string direccion = txtDireccion.Text.Trim();
+                DateTime fechaRegistro = DateTime.Now;
+                UpdateCliente(id, nombre, telefono, email, direccion, fechaRegistro);
             }
             else
             {
@@ -30,21 +31,24 @@ namespace Presentation.Views
 
         }
 
-        private void UpdateShippers(int id, string companyName, string phone)
+        private void UpdateCliente(int id, string nombre, string telefono, string email, string direccion, DateTime fechaRegistro)
         {
             try
             {
-                ClienteManager shipper = new ClienteManager(
+                ClienteManager cliente = new ClienteManager(
                     id,
-                    companyName,
-                    phone
+                    nombre,
+                    telefono,
+                    email,
+                    direccion,
+                    fechaRegistro
                 );
 
-                if (!id.Equals(null) && !string.IsNullOrEmpty(companyName) && !string.IsNullOrEmpty(phone))
+                if (!id.Equals(null) && !string.IsNullOrEmpty(nombre) && !string.IsNullOrEmpty(telefono) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(direccion) && !fechaRegistro.Equals(null))
                 {
-                    if (shipper.FindID())
+                    if (cliente.FindID())
                     {
-                        shipper.Update();
+                        cliente.Update();
                         txbResultado.Text = $"Datos Actualizados";
                     }
                     else

@@ -1,12 +1,10 @@
 ﻿using System.Windows;
 
-using Presentation.Views.Clientes;
-
-namespace Presentation
+namespace Presentation.Views.Clientes
 {
-    public partial class MainWindow : Window
+    public partial class ClienteMainWindow : Window
     {
-        public MainWindow()
+        public ClienteMainWindow()
         {
             InitializeComponent();
         }

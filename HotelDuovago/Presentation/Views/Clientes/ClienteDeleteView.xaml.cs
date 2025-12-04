@@ -1,11 +1,8 @@
 ﻿using ApplicationLogic.Managers;
-using DataAccess.Models;
-using DataAccess.Repositories;
-using System;
-using System.Data.Common;
 using System.Windows;
 using System.Windows.Controls;
-namespace Presentation.Views
+
+namespace Presentation.Views.Clientes
 {
     public partial class ClienteDeleteView : UserControl
     {
@@ -18,23 +15,23 @@ namespace Presentation.Views
         public void OnClickBtnDelete(object sender, RoutedEventArgs e) 
         {
             string idValue = txtSearch.Text.Trim();
-            DeleteShippers(idValue);
+            DeleteCliente(idValue);
 
         }
 
-        private void DeleteShippers(string id)
+        private void DeleteCliente(string id)
         {
             try
             {
-                int shipperId = Int32.Parse(id);
+                int Id = Int32.Parse(id);
 
-                ClienteManager shipper = new ClienteManager(
-                    shipperId
+                ClienteManager cliente = new ClienteManager(
+                    Id
                 );
 
-                if (shipper.Find())
+                if (cliente.Find())
                 {
-                    shipper.Delete();
+                    cliente.Delete();
                     txbResultado.Text = $"Eliminado";
                 }
                 else
