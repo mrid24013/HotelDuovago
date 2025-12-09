@@ -24,20 +24,24 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
 
-            <Menu Grid.Row="0">
+            <TextBlock
+                Grid.Row="0"
+                x:Name="txTitulo"
+                FontWeight="Medium"
+                Text="Administrador de Reservaciones"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+
+            <Menu Grid.Row="1">
                 <MenuItem Header="Clientes" Click="HandleClientes"/>
             </Menu>
 
-            <Menu Grid.Row="1">
+            <Menu Grid.Row="2">
                 <MenuItem Header="Habitaciones" Click="HandleHabitaciones"/>
             </Menu>
 
-            <Menu Grid.Row="2">
-                <MenuItem Header="Reservaciones" Click="HandleReservaciones"/>
-            </Menu>
-
             <Menu Grid.Row="3">
-                <MenuItem Header="Usuarios" Click="HandleUsuarios"/>
+                <MenuItem Header="Reservaciones" Click="HandleReservaciones"/>
             </Menu>
         </Grid>
 

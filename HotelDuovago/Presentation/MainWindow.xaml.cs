@@ -2,7 +2,6 @@
 using Presentation.Views.Clientes;
 using Presentation.Views.Habitaciones;
 using Presentation.Views.Reservaciones;
-using Presentation.Views.Usuarios;
 
 namespace Presentation
 {
@@ -12,7 +11,6 @@ namespace Presentation
         private Boolean Clientes = false;
         private Boolean Habitaciones = false;
         private Boolean Reservaciones = false;
-        private Boolean Usuarios = false;
         #endregion
 
         public MainWindow()
@@ -26,7 +24,6 @@ namespace Presentation
             Clientes = true;
             Habitaciones = false;
             Reservaciones = false;
-            Usuarios = false;
             HandleHotelReadView(sender, e);
         }
 
@@ -36,7 +33,6 @@ namespace Presentation
             Clientes = false;
             Habitaciones = true;
             Reservaciones = false;
-            Usuarios = false;
             HandleHotelReadView(sender, e);
         }
 
@@ -46,17 +42,6 @@ namespace Presentation
             Clientes = false;
             Habitaciones = false;
             Reservaciones = true;
-            Usuarios = false;
-            HandleHotelReadView(sender, e);
-        }
-
-        private void HandleUsuarios(object sender, RoutedEventArgs e)
-        {
-            Title = "Proyecto: Usuarios";
-            Clientes = false;
-            Habitaciones = false;
-            Reservaciones = false;
-            Usuarios = true;
             HandleHotelReadView(sender, e);
         }
 
@@ -74,10 +59,6 @@ namespace Presentation
             {
                 DataContext = new ReservacionReadView();
             }
-            else if (Usuarios)
-            {
-                DataContext = new UsuarioReadView();
-            }
         }
 
         private void HandleHotelUpdateView(object sender, RoutedEventArgs e)
@@ -93,10 +74,6 @@ namespace Presentation
             else if (Reservaciones)
             {
                 DataContext = new ReservacionUpdateView();
-            }
-            else if (Usuarios)
-            {
-                DataContext = new UsuarioUpdateView();
             }
         }
 
@@ -114,10 +91,6 @@ namespace Presentation
             {
                 DataContext = new ReservacionInsertView();
             }
-            else if (Usuarios)
-            {
-                DataContext = new UsuarioInsertView();
-            }
         }
 
         private void HandleHotelDeleteView(object sender, RoutedEventArgs e)
@@ -133,10 +106,6 @@ namespace Presentation
             else if (Reservaciones)
             {
                 DataContext = new ReservacionDeleteView();
-            }
-            else if (Usuarios)
-            {
-                DataContext = new UsuarioDeleteView();
             }
         }
     }

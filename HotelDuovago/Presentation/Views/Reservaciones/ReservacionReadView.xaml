@@ -65,31 +65,31 @@
                     <DataGridTextColumn 
                         Header="Cliente" 
                         Binding="{Binding ClienteId}" 
-                        Width="18*" />
+                        Width="10*" />
                     <DataGridTextColumn 
                         Header="Habitacion" 
                         Binding="{Binding HabitacionId}" 
-                        Width="14*" />
+                        Width="10*" />
                     <DataGridTextColumn 
                         Header="Entrada"
                         Binding="{Binding FechaEntrada}"
-                        Width="25*" />
+                        Width="12*" />
                     <DataGridTextColumn
                         Header="Salida" 
                         Binding="{Binding FechaSalida}" 
-                        Width="13*" />
+                        Width="12*" />
                     <DataGridTextColumn
-                        Header="Estado"
+                        Header="Dias"
                         Binding="{Binding DiasEstancia}" 
-                        Width="16*" />
+                        Width="7*" />
                     <DataGridTextColumn
                         Header="Total"
                         Binding="{Binding MontoTotal}" 
-                        Width="16*" />
+                        Width="10*" />
                     <DataGridTextColumn
                         Header="Estado"
                         Binding="{Binding Estado}" 
-                        Width="16*" />
+                        Width="12*" />
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

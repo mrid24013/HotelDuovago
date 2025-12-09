@@ -472,10 +472,6 @@ C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Reservaciones\ReservacionInsertView.g.cs
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Reservaciones\ReservacionReadView.g.cs
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Reservaciones\ReservacionUpdateView.g.cs
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioDeleteView.g.cs
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioInsertView.g.cs
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioReadView.g.cs
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioUpdateView.g.cs
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Habitaciones\HabitacionDeleteView.baml
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Habitaciones\HabitacionInsertView.baml
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Habitaciones\HabitacionReadView.baml
@@ -484,7 +480,3 @@ C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Reservaciones\ReservacionInsertView.baml
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Reservaciones\ReservacionReadView.baml
 C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Reservaciones\ReservacionUpdateView.baml
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioDeleteView.baml
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioInsertView.baml
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioReadView.baml
-C:\Users\IBryc\Documents\GitHub\HotelDuovago\HotelDuovago\Presentation\obj\Debug\net8.0-windows\Views\Usuarios\UsuarioUpdateView.baml
