@@ -2,10 +2,12 @@
 {
     public class ReservacionReport
     {
-        public required string Nombre { get; set; }
-        public required string Telefono { get; set; }
-        public required string Email { get; set; }
-        public required string Direccion { get; set; }
-        public required DateTime FechaRegistro { get; set; }
+        public required int ClienteId { get; set; }
+        public required int HabitacionId { get; set; }
+        public required DateTime FechaEntrada { get; set; }
+        public required DateTime FechaSalida { get; set; }
+        public required int DiasEstancia { get; set; }
+        public required decimal MontoTotal { get; set; }
+        public required string Estado { get; set; }
     }
 }

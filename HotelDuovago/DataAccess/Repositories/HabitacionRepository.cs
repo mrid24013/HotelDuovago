@@ -429,6 +429,49 @@ namespace DataAccess.Repositories
             }
         }
 
+        public decimal FindHabitacionPrice(int id)
+        {
+            try
+            {
+                // generamos la query
+                string query = @"
+                    SELECT
+                        Precio
+                    FROM Habitaciones
+                    WHERE HabitacionId = @HabitacionId;
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@HabitacionId", id);
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                return reader.GetDecimal(reader.GetOrdinal("Precio"));
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return 0;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+        }
+
         //=====================================================================================================================
 
         public bool Insert(Habitacion habitacion)

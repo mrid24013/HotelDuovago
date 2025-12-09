@@ -14,7 +14,7 @@ namespace Presentation.Views.Reservaciones
         public ReservacionReadView()
         {
             InitializeComponent();
-            LoadClientes();
+            LoadReservaciones();
             DataContext = this;
         }
 
@@ -27,24 +27,32 @@ namespace Presentation.Views.Reservaciones
             //Filtra en base a la palabra clave
             try
             {
-                dataSource.ItemsSource = Reservaciones.Where(c =>
-                c.Id.Equals(Int32.Parse(searchValue)) ||
-                c.Telefono.ToLower().Contains(searchValue)).ToList();
+                dataSource.ItemsSource = Reservaciones.Where(r =>
+                r.Id.Equals(Int32.Parse(searchValue)) ||
+                r.ClienteId.Equals(Int32.Parse(searchValue)) ||
+                r.HabitacionId.Equals(Int32.Parse(searchValue)) ||
+                r.DiasEstancia.Equals(Int32.Parse(searchValue))).ToList();
             }
             catch (Exception)
             {
                 try
                 {
-                    dataSource.ItemsSource = Reservaciones.Where(c =>
-                    c.FechaRegistro.Equals(DateTime.Parse(searchValue))).ToList();
+                    try
+                    {
+                        dataSource.ItemsSource = Reservaciones.Where(r =>
+                        r.MontoTotal.Equals(decimal.Parse(searchValue))).ToList();
+                    }
+                    catch (Exception)
+                    {
+                        dataSource.ItemsSource = Reservaciones.Where(r =>
+                        r.FechaEntrada.Equals(DateTime.Parse(searchValue)) ||
+                        r.FechaSalida.Equals(DateTime.Parse(searchValue))).ToList();
+                    }
                 }
                 catch (Exception)
                 {
-                    dataSource.ItemsSource = Reservaciones.Where(c =>
-                    c.Nombre.ToLower().Contains(searchValue) ||
-                    c.Telefono.ToLower().Contains(searchValue) ||
-                    c.Email.ToLower().Contains(searchValue) ||
-                    c.Direccion.ToLower().Contains(searchValue)).ToList();
+                    dataSource.ItemsSource = Reservaciones.Where(r =>
+                    r.Estado.ToLower().Contains(searchValue)).ToList();
                 }
             }
         }
@@ -56,7 +64,7 @@ namespace Presentation.Views.Reservaciones
             UpdateTotalRows();
         }
 
-        private void LoadClientes() 
+        private void LoadReservaciones() 
         {
             Reservaciones = ReservacionManager.GetAll();
             UpdateGrid();
@@ -73,11 +81,13 @@ namespace Presentation.Views.Reservaciones
             // Generar las columnas
             List<ExcelColumn> columns = new List<ExcelColumn>()
             {
-                new ExcelColumn { Name = "Nombre", Type = ColumnType.String},
-                new ExcelColumn { Name = "Telefono", Type = ColumnType.String},
-                new ExcelColumn { Name = "Email", Type = ColumnType.String},
-                new ExcelColumn { Name = "Direccion", Type = ColumnType.String},
-                new ExcelColumn { Name = "FechaRegistro", Type = ColumnType.DateTime}
+                new ExcelColumn { Name = "ClienteId", Type = ColumnType.Integer},
+                new ExcelColumn { Name = "HabitacionId", Type = ColumnType.Integer},
+                new ExcelColumn { Name = "FechaEntrada", Type = ColumnType.DateTime},
+                new ExcelColumn { Name = "FechaSalida", Type = ColumnType.DateTime},
+                new ExcelColumn { Name = "DiasEstancia", Type = ColumnType.Integer},
+                new ExcelColumn { Name = "MontoTotal", Type = ColumnType.Decimal},
+                new ExcelColumn { Name = "Estado", Type = ColumnType.String}
             };
 
             // Obtenemos los datos
@@ -89,16 +99,18 @@ namespace Presentation.Views.Reservaciones
             {
                 data.Add(new ReservacionReport()
                 {
-                    Nombre = reservacion.Nombre,
-                    Telefono = reservacion.Telefono,
-                    Email = reservacion.Email,
-                    Direccion = reservacion.Direccion,
-                    FechaRegistro = reservacion.FechaRegistro
+                    ClienteId = reservacion.ClienteId,
+                    HabitacionId = reservacion.HabitacionId,
+                    FechaEntrada = reservacion.FechaEntrada,
+                    FechaSalida = reservacion.FechaSalida,
+                    DiasEstancia = reservacion.DiasEstancia,
+                    MontoTotal = reservacion.MontoTotal,
+                    Estado = reservacion.Estado
                 });
             }
 
             // Mandamos a llamar al servicio
-            ExcelExportService.Handle(columns, data, "ClienteReport");
+            ExcelExportService.Handle(columns, data, "ReservacionReport");
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Presentation.Views.Reservaciones.ReservacionInsertView"
+﻿<UserControl xmlns:Wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"  x:Class="Presentation.Views.Reservaciones.ReservacionInsertView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -27,45 +27,49 @@
             <Grid Grid.Row="0">
                 <TextBlock 
                     FontWeight="Medium"
-                    Text="Nombre"
+                    Text="Cliente"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="1">
-                <TextBox Grid.Column="0" x:Name="txtNombre" />
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="85*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" x:Name="txtCliente" Grid.ColumnSpan="2" />
             </Grid>
 
             <Grid Grid.Row="2">
                 <TextBlock 
                     FontWeight="Medium"
-                    Text="Phone"
+                    Text="Habitacion"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="3">
-                <TextBox Grid.Column="0" x:Name="txtTelefono" />
+                <TextBox Grid.Column="0" x:Name="txtHabitacion" />
             </Grid>
 
             <Grid Grid.Row="4">
                 <TextBlock 
         FontWeight="Medium"
-        Text="Email"
+        Text="Entrada"
         VerticalAlignment="Center"
         HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="5">
-                <TextBox Grid.Column="0" x:Name="txtEmail" />
+                <DatePicker Grid.Column="0" x:Name="txtEntradaDate"/>
             </Grid>
 
             <Grid Grid.Row="6">
                 <TextBlock 
-        FontWeight="Medium"
-        Text="Direccion"
-        VerticalAlignment="Center"
-        HorizontalAlignment="Left"/>
+                    FontWeight="Medium"
+                    Text="Salida"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="7">
-                <TextBox Grid.Column="0" x:Name="txtDireccion" />
+                <DatePicker Grid.Column="0" x:Name="txtSalidaDate"/>
             </Grid>
 
             <Grid Grid.Row="9">
@@ -75,7 +79,7 @@
                         Click="OnClickBtnSave">
                 </Button>
             </Grid>
-            <Grid Grid.Row="13">
+            <Grid Grid.Row="11">
                 <TextBlock 
                     x:Name="txbResultado"
                     FontWeight="Medium"

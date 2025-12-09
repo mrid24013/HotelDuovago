@@ -16,7 +16,6 @@ namespace Presentation.Views.Habitaciones
         {
             string idValue = txtSearch.Text.Trim();
             DeleteCliente(idValue);
-
         }
 
         private void DeleteCliente(string id)

@@ -15,14 +15,16 @@ namespace DataAccess.Repositories
                 // generamos la query
                 string query = @"
                     SELECT 
+                        ReservacionId,
                         ClienteId,
-                        Nombre,
-                        Telefono,
-                        Email,
-                        Direccion,
-                        FechaRegistro
-                    FROM Clientes
-                    ORDER BY Nombre ASC;
+                        HabitacionId,
+                        FechaEntrada,
+                        FechaSalida,
+                        DiasEstancia,
+                        MontoTotal,
+                        Estado
+                    FROM Reservaciones
+                    ORDER BY ReservacionId ASC;
                 ";
                 // obtenemos la conexion a la base de datos
                 using (var connection = HotelConnection.GetConnection())
@@ -40,12 +42,14 @@ namespace DataAccess.Repositories
                             {
                                 reservaciones.Add(new Reservacion()
                                 {
-                                    Id = reader.GetInt32(reader.GetOrdinal("ClienteId")),
-                                    Nombre = reader.GetString(reader.GetOrdinal("Nombre")),
-                                    Telefono = reader.GetString(reader.GetOrdinal("Telefono")),
-                                    Email = reader.GetString(reader.GetOrdinal("Email")),
-                                    Direccion = reader.GetString(reader.GetOrdinal("Direccion")),
-                                    FechaRegistro = reader.GetDateTime(reader.GetOrdinal("FechaRegistro"))
+                                    Id = reader.GetInt32(reader.GetOrdinal("ReservacionId")),
+                                    ClienteId = reader.GetInt32(reader.GetOrdinal("ClienteId")),
+                                    HabitacionId = reader.GetInt32(reader.GetOrdinal("HabitacionId")),
+                                    FechaEntrada = reader.GetDateTime(reader.GetOrdinal("FechaEntrada")),
+                                    FechaSalida = reader.GetDateTime(reader.GetOrdinal("FechaSalida")),
+                                    DiasEstancia = reader.GetInt32(reader.GetOrdinal("DiasEstancia")),
+                                    MontoTotal = reader.GetDecimal(reader.GetOrdinal("MontoTotal")),
+                                    Estado = reader.GetString(reader.GetOrdinal("Estado"))
                                 });
                             }
                         }
@@ -70,14 +74,15 @@ namespace DataAccess.Repositories
                 // generamos la query
                 string query = @"
                     SELECT 
-                        ClienteId,
-                        Nombre,
-                        Telefono,
-                        Email,
-                        Direccion,
-                        FechaRegistro
-                    FROM Clientes
-                    WHERE ClienteId = @ClienteId;
+                        ClienteId
+                        HabitacionId,
+                        FechaEntrada,
+                        FechaSalida,
+                        DiasEstancia,
+                        MontoTotal,
+                        Estado
+                    FROM Reservaciones
+                    WHERE ReservacionId = @ReservacionId;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -86,7 +91,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@ClienteId", reservacion.Id);
+                        command.Parameters.AddWithValue("@ReservacionId", reservacion.Id);
                         // abrimos la conexion 
                         connection.Open();
                         using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
@@ -95,11 +100,13 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                reservacion.Nombre = reader.GetString(reader.GetOrdinal("Nombre"));
-                                reservacion.Telefono = reader.GetString(reader.GetOrdinal("Telefono"));
-                                reservacion.Email = reader.GetString(reader.GetOrdinal("Email"));
-                                reservacion.Direccion = reader.GetString(reader.GetOrdinal("Direccion"));
-                                reservacion.FechaRegistro = reader.GetDateTime(reader.GetOrdinal("FechaRegistro"));
+                                reservacion.ClienteId = reader.GetInt32(reader.GetOrdinal("ClienteId"));
+                                reservacion.HabitacionId = reader.GetInt32(reader.GetOrdinal("HabitacionId"));
+                                reservacion.FechaEntrada = reader.GetDateTime(reader.GetOrdinal("FechaEntrada"));
+                                reservacion.FechaSalida = reader.GetDateTime(reader.GetOrdinal("FechaSalida"));
+                                reservacion.DiasEstancia = reader.GetInt32(reader.GetOrdinal("DiasEstancia"));
+                                reservacion.MontoTotal = reader.GetDecimal(reader.GetOrdinal("MontoTotal"));
+                                reservacion.Estado = reader.GetString(reader.GetOrdinal("Estado"));
                                 return true;
                             }
 
@@ -116,7 +123,51 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindID(int ClienteId)
+        public bool FindID(int ReservacionId)
+        {
+            try
+            {
+                // generamos la query
+                string query = @"
+                    SELECT 
+                        ReservacionId
+                    FROM Reservaciones
+                    WHERE ReservacionId = @ReservacionId;
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ReservacionId", ReservacionId);
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                ReservacionId = reader.GetInt32(reader.GetOrdinal("ReservacionId"));
+                                return true;
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public bool FindClienteID(int ClienteId)
         {
             try
             {
@@ -124,7 +175,7 @@ namespace DataAccess.Repositories
                 string query = @"
                     SELECT 
                         ClienteId
-                    FROM Clientes
+                    FROM Reservaciones
                     WHERE ClienteId = @ClienteId;
                 ";
 
@@ -160,16 +211,16 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindNombre(string Nombre)
+        public bool FindHabitacionID(int HabitacionId)
         {
             try
             {
                 // generamos la query
                 string query = @"
                     SELECT 
-                        Nombre
-                    FROM Clientes
-                    WHERE Nombre = @Nombre;
+                        HabitacionId
+                    FROM Reservaciones
+                    WHERE HabitacionId = @HabitacionId;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -178,7 +229,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Nombre", Nombre.ToLower());
+                        command.Parameters.AddWithValue("@HabitacionId", HabitacionId);
                         // abrimos la conexion 
                         connection.Open();
                         using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
@@ -187,7 +238,7 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                Nombre = reader.GetString(reader.GetOrdinal("Nombre"));
+                                HabitacionId = reader.GetInt32(reader.GetOrdinal("HabitacionId"));
                                 return true;
                             }
 
@@ -204,16 +255,16 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindTelefono(string Telefono)
+        public bool FindFechaEntrada(DateTime FechaEntrada)
         {
             try
             {
                 // generamos la query
                 string query = @"
                     SELECT
-                        Telefono
-                    FROM Clientes
-                    WHERE Telefono = @Telefono;
+                        FechaEntrada
+                    FROM Reservaciones
+                    WHERE FechaEntrada = @FechaEntrada;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -222,7 +273,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Telefono", Telefono.ToLower());
+                        command.Parameters.AddWithValue("@FechaEntrada", FechaEntrada);
                         // abrimos la conexion 
                         connection.Open();
                         using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
@@ -231,7 +282,7 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                Telefono = reader.GetString(reader.GetOrdinal("Telefono"));
+                                FechaEntrada = reader.GetDateTime(reader.GetOrdinal("FechaEntrada"));
                                 return true;
                             }
 
@@ -248,16 +299,16 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindEmail(string Email)
+        public bool FindFechaSalida(DateTime FechaSalida)
         {
             try
             {
                 // generamos la query
                 string query = @"
                     SELECT
-                        Email
-                    FROM Clientes
-                    WHERE Email = @Email;
+                        FechaSalida
+                    FROM Reservaciones
+                    WHERE FechaSalida = @FechaSalida;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -266,7 +317,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Email", Email.ToLower());
+                        command.Parameters.AddWithValue("@FechaSalida", FechaSalida);
                         // abrimos la conexion 
                         connection.Open();
                         using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
@@ -275,7 +326,7 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                Email = reader.GetString(reader.GetOrdinal("Email"));
+                                FechaSalida = reader.GetDateTime(reader.GetOrdinal("FechaSalida"));
                                 return true;
                             }
 
@@ -292,16 +343,16 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindDireccion(string Direccion)
+        public bool FindDiasEstancia(int DiasEstancia)
         {
             try
             {
                 // generamos la query
                 string query = @"
-                    SELECT
-                        Direccion
-                    FROM Clientes
-                    WHERE Direccion = @Direccion;
+                    SELECT 
+                        DiasEstancia
+                    FROM Reservaciones
+                    WHERE DiasEstancia = @DiasEstancia;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -310,7 +361,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Direccion", Direccion.ToLower());
+                        command.Parameters.AddWithValue("@DiasEstancia", DiasEstancia);
                         // abrimos la conexion 
                         connection.Open();
                         using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
@@ -319,7 +370,7 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                Direccion = reader.GetString(reader.GetOrdinal("Direccion"));
+                                DiasEstancia = reader.GetInt32(reader.GetOrdinal("DiasEstancia"));
                                 return true;
                             }
 
@@ -336,16 +387,16 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindFechaRegistro(DateTime FechaRegistro)
+        public bool FindMontoTotal(decimal MontoTotal)
         {
             try
             {
                 // generamos la query
                 string query = @"
-                    SELECT
-                        FechaRegistro
-                    FROM Clientes
-                    WHERE FechaRegistro = @FechaRegistro;
+                    SELECT 
+                        MontoTotal
+                    FROM Reservaciones
+                    WHERE MontoTotal = @MontoTotal;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -354,7 +405,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@FechaRegistro", FechaRegistro);
+                        command.Parameters.AddWithValue("@MontoTotal", MontoTotal);
                         // abrimos la conexion 
                         connection.Open();
                         using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
@@ -363,7 +414,51 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                FechaRegistro = reader.GetDateTime(reader.GetOrdinal("FechaRegistro"));
+                                MontoTotal = reader.GetDecimal(reader.GetOrdinal("MontoTotal"));
+                                return true;
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public bool FindEstado(string Estado)
+        {
+            try
+            {
+                // generamos la query
+                string query = @"
+                    SELECT
+                        Estado
+                    FROM Reservaciones
+                    WHERE Estado = @Estado;
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Estado", Estado.ToLower());
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                Estado = reader.GetString(reader.GetOrdinal("Estado"));
                                 return true;
                             }
 
@@ -388,19 +483,23 @@ namespace DataAccess.Repositories
             {
                 // declaramos y generamos el query de insercion
                 string query = @"
-                    INSERT INTO Clientes (
-                        Nombre,
-                        Telefono,
-                        Email,
-                        Direccion,
-                        FechaRegistro
+                    INSERT INTO Reservaciones (
+                        ClienteId
+                        HabitacionId,
+                        FechaEntrada,
+                        FechaSalida,
+                        DiasEstancia,
+                        MontoTotal,
+                        Estado
                     )
                     VALUES (
-                        @Nombre,
-                        @Telefono,
-                        @Email,
-                        @Direccion,
-                        @FechaRegistro
+                        @ClienteId
+                        @HabitacionId,
+                        @FechaEntrada,
+                        @FechaSalida,
+                        @DiasEstancia,
+                        @MontoTotal,
+                        @Estado
                     );
                 ";
 
@@ -410,11 +509,13 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var insertCommand = new SqlCommand(query, connection))
                     {
-                        insertCommand.Parameters.AddWithValue("@Nombre", reservacion.Nombre);
-                        insertCommand.Parameters.AddWithValue("@Telefono", reservacion.Telefono);
-                        insertCommand.Parameters.AddWithValue("@Email", reservacion.Email);
-                        insertCommand.Parameters.AddWithValue("@Direccion", reservacion.Direccion);
-                        insertCommand.Parameters.AddWithValue("@FechaRegistro", reservacion.FechaRegistro);
+                        insertCommand.Parameters.AddWithValue("@ClienteId", reservacion.ClienteId);
+                        insertCommand.Parameters.AddWithValue("@HabitacionId", reservacion.HabitacionId);
+                        insertCommand.Parameters.AddWithValue("@FechaEntrada", reservacion.FechaEntrada);
+                        insertCommand.Parameters.AddWithValue("@FechaSalida", reservacion.FechaSalida);
+                        insertCommand.Parameters.AddWithValue("@DiasEstancia", reservacion.DiasEstancia);
+                        insertCommand.Parameters.AddWithValue("@MontoTotal", reservacion.MontoTotal);
+                        insertCommand.Parameters.AddWithValue("@Estado", reservacion.Estado);
                         // abrimos la conexion 
                         connection.Open();
                         // obten la cantidad de filas afectadas
@@ -441,14 +542,16 @@ namespace DataAccess.Repositories
             {
                 // declaramos y generamos el query de busqueda
                 string query = @"
-                    UPDATE Clientes
+                    UPDATE Reservaciones
                     SET
-                        Nombre = @Nombre,
-                        Telefono = @Telefono,
-                        Email = @Email,
-                        Direccion = @Direccion,
-                        FechaRegistro = @FechaRegistro
-                    WHERE ClienteId = @ClienteId;
+                        ClienteId = @ClienteId,
+                        HabitacionId = @HabitacionId,
+                        FechaEntrada = @FechaEntrada,
+                        FechaSalida = @FechaSalida,
+                        DiasEstancia = @DiasEstancia,
+                        MontoTotal = @MontoTotal,
+                        Estado = @Estado
+                    WHERE ReservacionId = @ReservacionId;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -457,12 +560,14 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var updateCommand = new SqlCommand(query, connection))
                     {
-                        updateCommand.Parameters.AddWithValue("@ClienteId", reservacion.Id);
-                        updateCommand.Parameters.AddWithValue("@Nombre", reservacion.Nombre);
-                        updateCommand.Parameters.AddWithValue("@Telefono", reservacion.Telefono);
-                        updateCommand.Parameters.AddWithValue("@Email", reservacion.Email);
-                        updateCommand.Parameters.AddWithValue("@Direccion", reservacion.Direccion);
-                        updateCommand.Parameters.AddWithValue("@FechaRegistro", reservacion.FechaRegistro);
+                        updateCommand.Parameters.AddWithValue("@ReservacionId", reservacion.Id);
+                        updateCommand.Parameters.AddWithValue("@ClienteId", reservacion.ClienteId);
+                        updateCommand.Parameters.AddWithValue("@HabitacionId", reservacion.HabitacionId);
+                        updateCommand.Parameters.AddWithValue("@FechaEntrada", reservacion.FechaEntrada);
+                        updateCommand.Parameters.AddWithValue("@FechaSalida", reservacion.FechaSalida);
+                        updateCommand.Parameters.AddWithValue("@DiasEstancia", reservacion.DiasEstancia);
+                        updateCommand.Parameters.AddWithValue("@MontoTotal", reservacion.MontoTotal);
+                        updateCommand.Parameters.AddWithValue("@Estado", reservacion.Estado);
                         // abrimos la conexion
                         connection.Open();
                         // obten la cantidad de filas afectadas
@@ -483,14 +588,14 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool Delete(int ClienteId)
+        public bool Delete(int ReservacionId)
         {
             try
             {
                 // declaramos y generamos el query de busqueda
                 string query = @"
-                    DELETE FROM Clientes
-                    WHERE ClienteId = @ClienteId;
+                    DELETE FROM Reservaciones
+                    WHERE ReservacionId = @ReservacionId;
                 ";
 
                 // obtenemos la conexion a la base de datos
@@ -499,7 +604,7 @@ namespace DataAccess.Repositories
                     // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
                     using (var deleteCommand = new SqlCommand(query, connection))
                     {
-                        deleteCommand.Parameters.AddWithValue("@ClienteId", ClienteId);
+                        deleteCommand.Parameters.AddWithValue("@ReservacionId", ReservacionId);
                         // abrimos la conexion
                         connection.Open();
                         // obten la cantidad de filas afectadas

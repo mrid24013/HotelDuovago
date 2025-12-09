@@ -6,41 +6,49 @@ namespace ApplicationLogic.Managers
     {
         #region attributes
         private int id;
-        private string nombre;
-        private string telefono;
-        private string email;
-        private string direccion;
-        private DateTime fechaRegistro;
+        private int clienteId;
+        private int habitacionId;
+        private DateTime fechaEntrada;
+        private DateTime fechaSalida;
+        private int diasEstancia;
+        private decimal montoTotal;
+        private string estado;
         #endregion
 
         #region getters
         public int Id { get { return id; } }
-        public string Nombre { get { return nombre; } }
-        public string Telefono { get { return telefono; } }
-        public string Email { get { return email; } }
-        public string Direccion { get { return direccion; } }
-        public DateTime FechaRegistro { get { return fechaRegistro; } }
+        public int ClienteId { get { return clienteId; } }
+        public int HabitacionId { get { return habitacionId; } }
+        public DateTime FechaEntrada { get { return fechaEntrada; } }
+        public DateTime FechaSalida { get { return fechaSalida; } }
+        public int DiasEstancia { get { return diasEstancia; } }
+        public decimal MontoTotal { get { return montoTotal; } }
+        public string Estado { get { return estado; } }
         #endregion
 
         #region constructors
         public ReservacionManager(int id)
         {
             this.id = id;
-            this.nombre = "";
-            this.telefono = "";
-            this.email = "";
-            this.direccion = "";
-            this.fechaRegistro = default(DateTime);
+            this.clienteId = 0;
+            this.habitacionId = 0;
+            this.fechaEntrada = default(DateTime);
+            this.fechaSalida = default(DateTime);
+            this.diasEstancia = 0;
+            this.montoTotal = 0;
+            this.estado = "";
         }
 
-        public ReservacionManager(int id, string nombre, string telefono, string email, string direccion, DateTime fechaRegistro)
+        public ReservacionManager(int id, int clienteId, int habitacionId, DateTime fechaEntrada, DateTime fechaSalida, int diasEstancia, decimal montoTotal, string estado)
         {
             this.id = id;
-            this.nombre = nombre;
-            this.telefono = telefono;
-            this.email = email;
-            this.direccion = direccion;
-            this.fechaRegistro = fechaRegistro;
+            this.clienteId = clienteId;
+            this.habitacionId = habitacionId;
+            this.fechaEntrada = fechaEntrada;
+            this.fechaSalida = fechaSalida;
+            this.diasEstancia = diasEstancia;
+            this.montoTotal = montoTotal;
+            this.estado = estado;
         }
         #endregion
 
@@ -53,11 +61,13 @@ namespace ApplicationLogic.Managers
             {
                 reservacion.Add(new ReservacionManager(
                     data.Id,
-                    data.Nombre,
-                    data.Telefono,
-                    data.Email,
-                    data.Direccion,
-                    data.FechaRegistro
+                    data.ClienteId,
+                    data.HabitacionId,
+                    data.FechaEntrada,
+                    data.FechaSalida,
+                    data.DiasEstancia,
+                    data.MontoTotal,
+                    data.Estado
                 ));
             }
             return reservacion;
@@ -70,20 +80,25 @@ namespace ApplicationLogic.Managers
             Reservacion reservacion = new Reservacion()
             {
                 Id = this.id,
-                Nombre = this.nombre,
-                Telefono = this.telefono,
-                Email = this.email,
-                Direccion = this.direccion,
-                FechaRegistro = this.fechaRegistro
+                ClienteId = this.clienteId,
+                HabitacionId = this.habitacionId,
+                FechaEntrada = this.fechaEntrada,
+                FechaSalida = this.fechaSalida,
+                DiasEstancia = this.diasEstancia,
+                MontoTotal = this.montoTotal,
+                Estado = this.estado
             };
             bool found = new DataAccess.Repositories.ReservacionRepository().Find(reservacion);
             if (found)
             {
-                this.nombre = reservacion.Nombre;
-                this.telefono = reservacion.Telefono;
-                this.email = reservacion.Email;
-                this.direccion = reservacion.Direccion;
-                this.fechaRegistro = reservacion.FechaRegistro;
+                this.id = reservacion.Id;
+                this.clienteId = reservacion.ClienteId;
+                this.habitacionId = reservacion.HabitacionId;
+                this.fechaEntrada = reservacion.FechaEntrada;
+                this.fechaSalida = reservacion.FechaSalida;
+                this.diasEstancia = reservacion.DiasEstancia;
+                this.montoTotal = reservacion.MontoTotal;
+                this.estado = reservacion.Estado;
             }
             return found;
         }
@@ -93,34 +108,44 @@ namespace ApplicationLogic.Managers
             bool found = new DataAccess.Repositories.ReservacionRepository().FindID(this.id);
             return found;
         }
-
-        public bool FindNombre()
+        public bool FindClienteID()
         {
-            bool found = new DataAccess.Repositories.ReservacionRepository().FindNombre(this.nombre);
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindClienteID(this.clienteId);
+            return found;
+        }
+        public bool FindHabitacionID()
+        {
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindHabitacionID(this.habitacionId);
             return found;
         }
 
-        public bool FindTelefono()
+        public bool FindFechaEntrada()
         {
-            bool found = new DataAccess.Repositories.ReservacionRepository().FindTelefono(this.telefono);
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindFechaEntrada(this.fechaEntrada);
             return found;
         }
 
-        public bool FindEmail()
+        public bool FindFechaSalida()
         {
-            bool found = new DataAccess.Repositories.ReservacionRepository().FindEmail(this.email);
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindFechaSalida(this.fechaSalida);
             return found;
         }
 
-        public bool FindDireccion()
+        public bool FindDiasEstancia()
         {
-            bool found = new DataAccess.Repositories.ReservacionRepository().FindDireccion(this.direccion);
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindDiasEstancia(this.diasEstancia);
             return found;
         }
 
-        public bool FindFechaRegistro()
+        public bool FindMontoTotal()
         {
-            bool found = new DataAccess.Repositories.ReservacionRepository().FindFechaRegistro(this.fechaRegistro);
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindMontoTotal(this.montoTotal);
+            return found;
+        }
+
+        public bool FindEstado()
+        {
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindEstado(this.estado);
             return found;
         }
 
@@ -131,11 +156,13 @@ namespace ApplicationLogic.Managers
             Reservacion reservacion = new Reservacion()
             {
                 Id = this.id,
-                Nombre = this.nombre,
-                Telefono = this.telefono,
-                Email = this.email,
-                Direccion = this.direccion,
-                FechaRegistro = this.fechaRegistro
+                ClienteId = this.clienteId,
+                HabitacionId = this.habitacionId,
+                FechaEntrada = this.fechaEntrada,
+                FechaSalida = this.fechaSalida,
+                DiasEstancia = this.diasEstancia,
+                MontoTotal = this.montoTotal,
+                Estado = this.estado
             };
             return new DataAccess.Repositories.ReservacionRepository().Insert(reservacion);
         }
@@ -145,11 +172,13 @@ namespace ApplicationLogic.Managers
             Reservacion reservacion = new Reservacion()
             {
                 Id = this.id,
-                Nombre = this.nombre,
-                Telefono = this.telefono,
-                Email = this.email,
-                Direccion = this.direccion,
-                FechaRegistro = this.fechaRegistro
+                ClienteId = this.clienteId,
+                HabitacionId = this.habitacionId,
+                FechaEntrada = this.fechaEntrada,
+                FechaSalida = this.fechaSalida,
+                DiasEstancia = this.diasEstancia,
+                MontoTotal = this.montoTotal,
+                Estado = this.estado
             };
             return new DataAccess.Repositories.ReservacionRepository().Update(reservacion);
         }

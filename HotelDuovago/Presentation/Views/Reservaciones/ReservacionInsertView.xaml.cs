@@ -1,4 +1,6 @@
 ﻿using ApplicationLogic.Managers;
+using DataAccess.Models;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -12,41 +14,61 @@ namespace Presentation.Views.Reservaciones
             DataContext = this;
         }
 
+        private List<ClienteManager> clientes = new List<ClienteManager>() { };
+        public List<ClienteManager> Clientes { get { return clientes; } set { clientes = value; } }
+
+        private List<HabitacionManager> habitaciones = new List<HabitacionManager>() { };
+        public List<HabitacionManager> Habitaciones { get { return habitaciones; } set { habitaciones = value; } }
+
         public void OnClickBtnSave(object sender, RoutedEventArgs e) 
         {
-            string nombre = txtNombre.Text.Trim();
-            string telefono = txtTelefono.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string direccion = txtDireccion.Text.Trim();
-            DateTime fechaRegistro = DateTime.Now;
-            SaveClientes(nombre, telefono, email, direccion, fechaRegistro);
+            string clienteID = txtCliente.Text.Trim();
+            string habitacionID = txtHabitacion.Text.Trim();
+            string entrada = txtEntradaDate.Text;
+            string salida = txtSalidaDate.Text;
+            SaveReservaciones(clienteID, habitacionID, entrada, salida);
         }
 
-        private void SaveClientes(string nombre, string telefono, string email, string direccion, DateTime fechaRegistro)
+        private void SaveReservaciones(string clienteID, string habitacionID, string entrada, string salida)
         {
             try
             {
-                Random random = new Random();
-
-                ReservacionManager cliente = new ReservacionManager(
-                    random.Next(0, 1000),
-                    nombre,
-                    telefono,
-                    email,
-                    direccion,
-                    fechaRegistro
-                );
-
-                if (!string.IsNullOrEmpty(nombre) && !string.IsNullOrEmpty(telefono) && !string.IsNullOrEmpty(email))
+                if (!string.IsNullOrEmpty(clienteID) && !string.IsNullOrEmpty(habitacionID))
                 {
-                    if (!cliente.FindTelefono() && !cliente.FindEmail())
+                    int clienteid = Int32.Parse(clienteID);
+                    int habitacionid = Int32.Parse(habitacionID);
+                    DateTime fEntrada = DateTime.Parse(txtEntradaDate.Text);
+                    DateTime fSalida = DateTime.Parse(txtSalidaDate.Text);
+
+                    ClienteManager cliente = new ClienteManager(
+                        clienteid
+                    );
+
+                    HabitacionManager habitacion = new HabitacionManager(
+                        habitacionid
+                    );
+
+                    if (cliente.FindID() && habitacion.FindID())
                     {
-                        cliente.Insert();
-                        txbResultado.Text = $"Datos Guardado";
+                        decimal price = habitacion.HabitacionPrice();
+                        int dias = (fSalida - fEntrada).Days;
+
+                        Random random = new Random();
+
+                        ReservacionManager reservacion = new ReservacionManager(
+                            random.Next(0, 1000),
+                            clienteid,
+                            habitacionid,
+                            fEntrada,
+                            fSalida,
+                            dias,
+                            price * dias,
+                            "Activa"
+                        );
                     }
                     else
                     {
-                        txbResultado.Text = $"Datos ya existentes";
+                        txbResultado.Text = $"Cliente / Habitacion no existente.";
                     }
                 }
                 else

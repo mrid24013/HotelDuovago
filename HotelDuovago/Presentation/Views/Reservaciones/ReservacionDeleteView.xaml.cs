@@ -25,13 +25,13 @@ namespace Presentation.Views.Reservaciones
             {
                 int Id = Int32.Parse(id);
 
-                ReservacionManager cliente = new ReservacionManager(
+                ReservacionManager reservacion = new ReservacionManager(
                     Id
                 );
 
-                if (cliente.Find())
+                if (reservacion.Find())
                 {
-                    cliente.Delete();
+                    reservacion.Delete();
                     txbResultado.Text = $"Eliminado";
                 }
                 else

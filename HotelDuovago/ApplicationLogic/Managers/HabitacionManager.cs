@@ -1,4 +1,5 @@
 ﻿using DataAccess.Models;
+using System.Runtime.CompilerServices;
 
 namespace ApplicationLogic.Managers
 {
@@ -173,6 +174,11 @@ namespace ApplicationLogic.Managers
         public bool Delete()
         {
             return new DataAccess.Repositories.HabitacionRepository().Delete(this.id);
+        }
+
+        public decimal HabitacionPrice()
+        {
+            return new DataAccess.Repositories.HabitacionRepository().FindHabitacionPrice(this.id);
         }
         #endregion
     }

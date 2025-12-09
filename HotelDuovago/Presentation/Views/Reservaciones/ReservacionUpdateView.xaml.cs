@@ -37,11 +37,13 @@ namespace Presentation.Views.Reservaciones
             {
                 ReservacionManager cliente = new ReservacionManager(
                     id,
-                    nombre,
-                    telefono,
-                    email,
-                    direccion,
-                    fechaRegistro
+                    0,
+                    0,
+                    DateTime.Now,
+                    DateTime.Now,
+                    0,
+                    0,
+                    ""
                 );
 
                 if (!id.Equals(null) && !string.IsNullOrEmpty(nombre) && !string.IsNullOrEmpty(telefono) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(direccion) && !fechaRegistro.Equals(null))
