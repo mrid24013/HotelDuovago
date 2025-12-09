@@ -1,4 +1,5 @@
 ﻿using ApplicationLogic.Managers;
+using DataAccess.Models;
 using DataAccess.Repositories;
 using Presentation.Enums;
 using Presentation.Models;
@@ -45,14 +46,16 @@ namespace Presentation.Views.Reservaciones
                     catch (Exception)
                     {
                         dataSource.ItemsSource = Reservaciones.Where(r =>
-                        r.FechaEntrada.Equals(DateTime.Parse(searchValue)) ||
-                        r.FechaSalida.Equals(DateTime.Parse(searchValue))).ToList();
+                        r.FechaEntrada.Equals(DateOnly.Parse(searchValue)) ||
+                        r.FechaSalida.Equals(DateOnly.Parse(searchValue))).ToList();
                     }
                 }
                 catch (Exception)
                 {
                     dataSource.ItemsSource = Reservaciones.Where(r =>
-                    r.Estado.ToLower().Contains(searchValue)).ToList();
+                    r.Estado.ToLower().Contains(searchValue) ||
+                    r.FechaEntrada.ToString().Contains(searchValue) ||
+                    r.FechaSalida.ToString().Contains(searchValue)).ToList();
                 }
             }
         }

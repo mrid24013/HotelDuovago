@@ -1,6 +1,7 @@
 ﻿using DataAccess.Connections;
 using DataAccess.Models;
 using Microsoft.Data.SqlClient;
+using System.Collections.Generic;
 using System.Data;
 
 namespace DataAccess.Repositories
@@ -45,8 +46,8 @@ namespace DataAccess.Repositories
                                     Id = reader.GetInt32(reader.GetOrdinal("ReservacionId")),
                                     ClienteId = reader.GetInt32(reader.GetOrdinal("ClienteId")),
                                     HabitacionId = reader.GetInt32(reader.GetOrdinal("HabitacionId")),
-                                    FechaEntrada = reader.GetDateTime(reader.GetOrdinal("FechaEntrada")),
-                                    FechaSalida = reader.GetDateTime(reader.GetOrdinal("FechaSalida")),
+                                    FechaEntrada = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("FechaEntrada"))),
+                                    FechaSalida = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("FechaSalida"))),
                                     DiasEstancia = reader.GetInt32(reader.GetOrdinal("DiasEstancia")),
                                     MontoTotal = reader.GetDecimal(reader.GetOrdinal("MontoTotal")),
                                     Estado = reader.GetString(reader.GetOrdinal("Estado"))
@@ -74,7 +75,7 @@ namespace DataAccess.Repositories
                 // generamos la query
                 string query = @"
                     SELECT 
-                        ClienteId
+                        ClienteId,
                         HabitacionId,
                         FechaEntrada,
                         FechaSalida,
@@ -102,8 +103,8 @@ namespace DataAccess.Repositories
                                 // poblamos con el resultado
                                 reservacion.ClienteId = reader.GetInt32(reader.GetOrdinal("ClienteId"));
                                 reservacion.HabitacionId = reader.GetInt32(reader.GetOrdinal("HabitacionId"));
-                                reservacion.FechaEntrada = reader.GetDateTime(reader.GetOrdinal("FechaEntrada"));
-                                reservacion.FechaSalida = reader.GetDateTime(reader.GetOrdinal("FechaSalida"));
+                                reservacion.FechaEntrada = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("FechaEntrada")));
+                                reservacion.FechaSalida = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("FechaSalida")));
                                 reservacion.DiasEstancia = reader.GetInt32(reader.GetOrdinal("DiasEstancia"));
                                 reservacion.MontoTotal = reader.GetDecimal(reader.GetOrdinal("MontoTotal"));
                                 reservacion.Estado = reader.GetString(reader.GetOrdinal("Estado"));
@@ -255,7 +256,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindFechaEntrada(DateTime FechaEntrada)
+        public bool FindFechaEntrada(DateOnly FechaEntrada)
         {
             try
             {
@@ -282,7 +283,7 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                FechaEntrada = reader.GetDateTime(reader.GetOrdinal("FechaEntrada"));
+                                FechaEntrada = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("FechaEntrada")));
                                 return true;
                             }
 
@@ -299,7 +300,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindFechaSalida(DateTime FechaSalida)
+        public bool FindFechaSalida(DateOnly FechaSalida)
         {
             try
             {
@@ -326,7 +327,7 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                FechaSalida = reader.GetDateTime(reader.GetOrdinal("FechaSalida"));
+                                FechaSalida = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("FechaSalida")));
                                 return true;
                             }
 
@@ -475,6 +476,103 @@ namespace DataAccess.Repositories
             }
         }
 
+        public bool FindReservacionExistente(int id, DateOnly entrada, DateOnly salida)
+        {
+            try
+            {
+                String[] entradaFormat = entrada.ToString().Split("/");
+                String[] salidaFormat = salida.ToString().Split("/");
+                DateOnly fEntrada = DateOnly.Parse(entradaFormat[2] + "/" + entradaFormat[0] + "/" + entradaFormat[1]);
+                DateOnly fSalida = DateOnly.Parse(salidaFormat[2] + "/" + salidaFormat[0] + "/" + salidaFormat[1]);
+                // generamos la query
+                string query = @"
+                    SELECT
+                        ReservacionId
+                    FROM Reservaciones
+                    WHERE ClienteId = @ClienteId AND (FechaEntrada = @FechaEntrada OR FechaSalida = @FechaSalida)
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ClienteId", id);
+                        command.Parameters.AddWithValue("@FechaEntrada", entrada);
+                        command.Parameters.AddWithValue("@FechaSalida", salida);
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                id = reader.GetInt32(reader.GetOrdinal("ReservacionId"));
+                                entrada = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("ReservacionId")));
+                                salida = DateOnly.FromDateTime(reader.GetDateTime(reader.GetOrdinal("ReservacionId")));
+                                return true;
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public (int, int) FindValues(int id)
+        {
+            try
+            {
+                // generamos la query
+                string query = @"
+                    SELECT 
+                        ClienteId,
+                        HabitacionId
+                    FROM Reservaciones
+                    WHERE ReservacionId = @ReservacionId;
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ReservacionId", id);
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                return (reader.GetInt32(reader.GetOrdinal("ClienteId")),
+                                    reader.GetInt32(reader.GetOrdinal("HabitacionId")));
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return (0, 0);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return (0, 0);
+            }
+        }
+
         //=====================================================================================================================
 
         public bool Insert(Reservacion reservacion)
@@ -484,7 +582,7 @@ namespace DataAccess.Repositories
                 // declaramos y generamos el query de insercion
                 string query = @"
                     INSERT INTO Reservaciones (
-                        ClienteId
+                        ClienteId,
                         HabitacionId,
                         FechaEntrada,
                         FechaSalida,
@@ -493,7 +591,7 @@ namespace DataAccess.Repositories
                         Estado
                     )
                     VALUES (
-                        @ClienteId
+                        @ClienteId,
                         @HabitacionId,
                         @FechaEntrada,
                         @FechaSalida,

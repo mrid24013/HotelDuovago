@@ -3,6 +3,7 @@ using DataAccess.Models;
 using Microsoft.Data.SqlClient;
 using System.Data;
 using System.Numerics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataAccess.Repositories
 {
@@ -99,12 +100,13 @@ namespace DataAccess.Repositories
                             if (reader.Read())
                             {
                                 // poblamos con el resultado
-                                habitacion.Numero = reader.GetInt32(reader.GetOrdinal("Nombre"));
-                                habitacion.Tipo = reader.GetString(reader.GetOrdinal("Telefono"));
-                                habitacion.Precio = reader.GetDecimal(reader.GetOrdinal("Email"));
-                                habitacion.Capacidad = reader.GetInt32(reader.GetOrdinal("Direccion"));
-                                habitacion.Descripcion = reader.GetString(reader.GetOrdinal("FechaRegistro"));
-                                habitacion.Disponible = reader.GetBoolean(reader.GetOrdinal("FechaRegistro"));
+                                habitacion.Id = reader.GetInt32(reader.GetOrdinal("HabitacionId"));
+                                habitacion.Numero = reader.GetInt32(reader.GetOrdinal("Numero"));
+                                habitacion.Tipo = reader.GetString(reader.GetOrdinal("Tipo"));
+                                habitacion.Precio = reader.GetDecimal(reader.GetOrdinal("Precio"));
+                                habitacion.Capacidad = reader.GetInt32(reader.GetOrdinal("Capacidad"));
+                                habitacion.Descripcion = reader.GetString(reader.GetOrdinal("Descripcion"));
+                                habitacion.Disponible = reader.GetBoolean(reader.GetOrdinal("Disponible"));
                                 return true;
                             }
 
@@ -341,7 +343,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindDescripcion(String Descripcion)
+        public bool FindDescripcion(string Descripcion)
         {
             try
             {
@@ -385,7 +387,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public bool FindDisponible(Boolean Disponible)
+        public bool FindDisponible(bool Disponible)
         {
             try
             {
@@ -469,6 +471,100 @@ namespace DataAccess.Repositories
             {
                 Console.WriteLine(ex.Message);
                 return 0;
+            }
+        }
+
+        public bool FindHabitacionAvailable(int id)
+        {
+            try
+            {
+                // generamos la query
+                string query = @"
+                    SELECT
+                        Disponible
+                    FROM Habitaciones
+                    WHERE HabitacionId = @HabitacionId;
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@HabitacionId", id);
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                return reader.GetBoolean(reader.GetOrdinal("Disponible"));
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public (int, string, decimal, int, string) FindValues(int id)
+        {
+            try
+            {
+                // generamos la query
+                string query = @"
+                    SELECT 
+                        Numero,
+                        Tipo,
+                        Precio,
+                        Capacidad,
+                        Descripcion
+                    FROM Habitaciones
+                    WHERE HabitacionId = @HabitacionId;
+                ";
+
+                // obtenemos la conexion a la base de datos
+                using (var connection = HotelConnection.GetConnection())
+                {
+                    // genera el comando indicando la query a ejecutar y la conexion en la que se ejecutara
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@HabitacionId", id);
+                        // abrimos la conexion 
+                        connection.Open();
+                        using (var reader = command.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            // verifica si el reader obtuvo alguna fila
+                            if (reader.Read())
+                            {
+                                // poblamos con el resultado
+                                return (reader.GetInt32(reader.GetOrdinal("Numero")), 
+                                    reader.GetString(reader.GetOrdinal("Tipo")), 
+                                    reader.GetDecimal(reader.GetOrdinal("Precio")), 
+                                    reader.GetInt32(reader.GetOrdinal("Capacidad")), 
+                                    reader.GetString(reader.GetOrdinal("Descripcion")));
+                            }
+
+                            // si el reader no obtuvo nada, no se encontró
+                            return (0, null, 0, 0, null);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return (0, "", 0, 0, "");
             }
         }
 

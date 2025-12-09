@@ -1,4 +1,7 @@
 ﻿using ApplicationLogic.Managers;
+using DataAccess.Models;
+using System;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -16,13 +19,17 @@ namespace Presentation.Views.Reservaciones
         {
             if (!string.IsNullOrEmpty(txtID.Text.Trim()))
             {
-                int id = Int32.Parse(txtID.Text.Trim());
-                string nombre = txtNombre.Text.Trim();
-                string telefono = txtTelefono.Text.Trim();
-                string email = txtEmail.Text.Trim();
-                string direccion = txtDireccion.Text.Trim();
-                DateTime fechaRegistro = DateTime.Now;
-                UpdateCliente(id, nombre, telefono, email, direccion, fechaRegistro);
+                string id = txtID.Text.Trim();
+                string entrada = txtEntradaDate.Text;
+                string salida = txtSalidaDate.Text;
+                string estado = "";
+                if (txtEstadoActivo.IsChecked == true)
+                    estado = "Activa";
+                else if (txtEstadoFinalizado.IsChecked == true)
+                    estado = "Finalizada";
+                else if (txtEstadoCancelado.IsChecked == true)
+                    estado = "Cancelada";
+                UpdateCliente(id, entrada, salida, estado);
             }
             else
             {
@@ -31,31 +38,47 @@ namespace Presentation.Views.Reservaciones
 
         }
 
-        private void UpdateCliente(int id, string nombre, string telefono, string email, string direccion, DateTime fechaRegistro)
+        private void UpdateCliente(string id, string entrada, string salida, string estado)
         {
             try
             {
-                ReservacionManager cliente = new ReservacionManager(
-                    id,
-                    0,
-                    0,
-                    DateTime.Now,
-                    DateTime.Now,
-                    0,
-                    0,
-                    ""
-                );
-
-                if (!id.Equals(null) && !string.IsNullOrEmpty(nombre) && !string.IsNullOrEmpty(telefono) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(direccion) && !fechaRegistro.Equals(null))
+                if (!string.IsNullOrEmpty(id) && !string.IsNullOrEmpty(entrada) && !string.IsNullOrEmpty(salida) && !string.IsNullOrEmpty(estado))
                 {
-                    if (cliente.FindID())
+                    int rId = int.Parse(id);
+                    DateOnly fEntrada = DateOnly.Parse(entrada);
+                    DateOnly fSalida = DateOnly.Parse(salida);
+
+                    ReservacionManager reservacion = new ReservacionManager(
+                        rId
+                    );
+
+                    var values = reservacion.FindValues();
+
+                    HabitacionManager habitacion = new HabitacionManager(
+                        values.habitacionId
+                    );
+                    decimal price = habitacion.HabitacionPrice();
+                    int dias = (fSalida.ToDateTime(default(TimeOnly)) - fEntrada.ToDateTime(default(TimeOnly))).Days;
+
+                    ReservacionManager reservacionUpdated = new ReservacionManager(
+                            rId,
+                            values.clienteId,
+                            values.habitacionId,
+                            fEntrada,
+                            fSalida,
+                            dias,
+                            price * dias,
+                            estado
+                    );
+
+                    if (reservacion.FindID())
                     {
-                        cliente.Update();
-                        txbResultado.Text = $"Datos Actualizados";
+                        reservacionUpdated.Update();
+                        txbResultado.Text = $"Datos actualizados.";
                     }
                     else
                     {
-                        txbResultado.Text = $"Shipper no existente";
+                        txbResultado.Text = $"Reservacion no existente.";
                     }
                 }
                 else

@@ -21,7 +21,7 @@
                 <RowDefinition Height="10px"/>
                 <RowDefinition Height="25px"/>
                 <RowDefinition Height="32px"/>
-                <RowDefinition Height="60px"/>
+                <RowDefinition Height="30px"/>
                 <RowDefinition Height="32px"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
@@ -36,59 +36,55 @@
             <Grid Grid.Row="1">
                 <TextBox Grid.Column="0" x:Name="txtID" />
             </Grid>
-
+            
             <Grid Grid.Row="2">
                 <TextBlock 
-                FontWeight="Medium"
-                Text="Nombre"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Left"/>
+                    FontWeight="Medium"
+                    Text="Entrada"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="3">
-                <TextBox Grid.Column="0" x:Name="txtNombre" />
+                <DatePicker Grid.Column="0" x:Name="txtEntradaDate"/>
             </Grid>
 
             <Grid Grid.Row="4">
                 <TextBlock 
-                FontWeight="Medium"
-                Text="Telefono"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Left"/>
+                    FontWeight="Medium"
+                    Text="Salida"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="5">
-                <TextBox Grid.Column="0" x:Name="txtTelefono" />
+                <DatePicker Grid.Column="0" x:Name="txtSalidaDate"/>
             </Grid>
 
             <Grid Grid.Row="6">
                 <TextBlock 
                     FontWeight="Medium"
-                    Text="Email"
+                    Text="Estado"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="7">
-                <TextBox Grid.Column="0" x:Name="txtEmail" />
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton Grid.Column="0" x:Name="txtEstadoActivo" Content="Activa" GroupName="estados" HorizontalAlignment="Center"/>
+                <RadioButton Grid.Column="1" x:Name="txtEstadoFinalizado" Content="Finalizada"  GroupName="estados" HorizontalAlignment="Center"/>
+                <RadioButton Grid.Column="2" x:Name="txtEstadoCancelado" Content="Cancelada"  GroupName="estados" HorizontalAlignment="Center"/>
             </Grid>
 
-            <Grid Grid.Row="8">
-                <TextBlock 
-                    FontWeight="Medium"
-                    Text="Direccion"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"/>
-            </Grid>
-            <Grid Grid.Row="9">
-                <TextBox Grid.Column="0" x:Name="txtDireccion" />
-            </Grid>
-
-            <Grid Grid.Row="11">
+            <Grid Grid.Row="10">
                 <Button Grid.Column="2" 
                     x:Name="btnUpdate" 
                     Content="Update"
                     Click="OnClickBtnUpdate">
                 </Button>
             </Grid>
-            <Grid Grid.Row="13">
+            <Grid Grid.Row="12">
                 <TextBlock 
                 x:Name="txbResultado"
                 FontWeight="Medium"

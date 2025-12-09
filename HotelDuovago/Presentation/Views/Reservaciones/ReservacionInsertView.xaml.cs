@@ -1,8 +1,10 @@
 ﻿using ApplicationLogic.Managers;
 using DataAccess.Models;
 using System;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 
 namespace Presentation.Views.Reservaciones
 {
@@ -14,11 +16,8 @@ namespace Presentation.Views.Reservaciones
             DataContext = this;
         }
 
-        private List<ClienteManager> clientes = new List<ClienteManager>() { };
-        public List<ClienteManager> Clientes { get { return clientes; } set { clientes = value; } }
-
-        private List<HabitacionManager> habitaciones = new List<HabitacionManager>() { };
-        public List<HabitacionManager> Habitaciones { get { return habitaciones; } set { habitaciones = value; } }
+        private List<ReservacionManager> reservaciones = new List<ReservacionManager>() { };
+        public List<ReservacionManager> Reservaciones { get { return reservaciones; } set { reservaciones = value; } }
 
         public void OnClickBtnSave(object sender, RoutedEventArgs e) 
         {
@@ -26,6 +25,7 @@ namespace Presentation.Views.Reservaciones
             string habitacionID = txtHabitacion.Text.Trim();
             string entrada = txtEntradaDate.Text;
             string salida = txtSalidaDate.Text;
+
             SaveReservaciones(clienteID, habitacionID, entrada, salida);
         }
 
@@ -35,10 +35,10 @@ namespace Presentation.Views.Reservaciones
             {
                 if (!string.IsNullOrEmpty(clienteID) && !string.IsNullOrEmpty(habitacionID))
                 {
-                    int clienteid = Int32.Parse(clienteID);
-                    int habitacionid = Int32.Parse(habitacionID);
-                    DateTime fEntrada = DateTime.Parse(txtEntradaDate.Text);
-                    DateTime fSalida = DateTime.Parse(txtSalidaDate.Text);
+                    int clienteid = int.Parse(clienteID);
+                    int habitacionid = int.Parse(habitacionID);
+                    DateOnly fEntrada = DateOnly.Parse(entrada);
+                    DateOnly fSalida = DateOnly.Parse(salida);
 
                     ClienteManager cliente = new ClienteManager(
                         clienteid
@@ -51,7 +51,8 @@ namespace Presentation.Views.Reservaciones
                     if (cliente.FindID() && habitacion.FindID())
                     {
                         decimal price = habitacion.HabitacionPrice();
-                        int dias = (fSalida - fEntrada).Days;
+                        bool available = habitacion.HabitacionAvailable();
+                        int dias = (fSalida.ToDateTime(default(TimeOnly)) - fEntrada.ToDateTime(default(TimeOnly))).Days;
 
                         Random random = new Random();
 
@@ -65,6 +66,36 @@ namespace Presentation.Views.Reservaciones
                             price * dias,
                             "Activa"
                         );
+
+                        if (available)
+                        {
+                            if (!reservacion.FindReservacionExistente())
+                            {
+
+                                reservacion.Insert();
+                                var values = habitacion.FindValues();
+                                HabitacionManager updateValue = new HabitacionManager(
+                                    habitacionid,
+                                    values.numero,
+                                    values.tipo,
+                                    values.precio,
+                                    values.capacidad,
+                                    values.descripcion,
+                                    false
+                                    );
+
+                                updateValue.Update();
+                                txbResultado.Text = $"Reservacion agregada.";
+                            }
+                            else
+                            {
+                                txbResultado.Text = $"Cliente ya tiene reservacion en estas fechas.";
+                            }
+                        }
+                        else
+                        {
+                            txbResultado.Text = $"Habitacion no disponible.";
+                        }
                     }
                     else
                     {

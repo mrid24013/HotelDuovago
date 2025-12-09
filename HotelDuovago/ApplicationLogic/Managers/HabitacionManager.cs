@@ -139,6 +139,16 @@ namespace ApplicationLogic.Managers
             return found;
         }
 
+        public bool HabitacionAvailable()
+        {
+            return new DataAccess.Repositories.HabitacionRepository().FindHabitacionAvailable(this.id);
+        }
+
+        public (int numero, string tipo, decimal precio, int capacidad, string descripcion) FindValues()
+        {
+            return new DataAccess.Repositories.HabitacionRepository().FindValues(this.id);
+        }
+
         //=====================================================================================================================
 
         public bool Insert()

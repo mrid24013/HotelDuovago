@@ -8,8 +8,8 @@ namespace ApplicationLogic.Managers
         private int id;
         private int clienteId;
         private int habitacionId;
-        private DateTime fechaEntrada;
-        private DateTime fechaSalida;
+        private DateOnly fechaEntrada;
+        private DateOnly fechaSalida;
         private int diasEstancia;
         private decimal montoTotal;
         private string estado;
@@ -19,8 +19,8 @@ namespace ApplicationLogic.Managers
         public int Id { get { return id; } }
         public int ClienteId { get { return clienteId; } }
         public int HabitacionId { get { return habitacionId; } }
-        public DateTime FechaEntrada { get { return fechaEntrada; } }
-        public DateTime FechaSalida { get { return fechaSalida; } }
+        public DateOnly FechaEntrada { get { return fechaEntrada; } }
+        public DateOnly FechaSalida { get { return fechaSalida; } }
         public int DiasEstancia { get { return diasEstancia; } }
         public decimal MontoTotal { get { return montoTotal; } }
         public string Estado { get { return estado; } }
@@ -32,14 +32,14 @@ namespace ApplicationLogic.Managers
             this.id = id;
             this.clienteId = 0;
             this.habitacionId = 0;
-            this.fechaEntrada = default(DateTime);
-            this.fechaSalida = default(DateTime);
+            this.fechaEntrada = default(DateOnly);
+            this.fechaSalida = default(DateOnly);
             this.diasEstancia = 0;
             this.montoTotal = 0;
             this.estado = "";
         }
 
-        public ReservacionManager(int id, int clienteId, int habitacionId, DateTime fechaEntrada, DateTime fechaSalida, int diasEstancia, decimal montoTotal, string estado)
+        public ReservacionManager(int id, int clienteId, int habitacionId, DateOnly fechaEntrada, DateOnly fechaSalida, int diasEstancia, decimal montoTotal, string estado)
         {
             this.id = id;
             this.clienteId = clienteId;
@@ -147,6 +147,17 @@ namespace ApplicationLogic.Managers
         {
             bool found = new DataAccess.Repositories.ReservacionRepository().FindEstado(this.estado);
             return found;
+        }
+
+        public bool FindReservacionExistente()
+        {
+            bool found = new DataAccess.Repositories.ReservacionRepository().FindReservacionExistente(this.id, this.fechaEntrada, this.fechaSalida);
+            return found;
+        }
+
+        public (int clienteId, int habitacionId) FindValues()
+        {
+            return new DataAccess.Repositories.ReservacionRepository().FindValues(this.id);
         }
 
         //=====================================================================================================================
